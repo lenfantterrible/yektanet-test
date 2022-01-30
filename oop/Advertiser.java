@@ -8,7 +8,7 @@ public class Advertiser extends BaseAdvertising{
 
 
     public Advertiser(int ID, String name) {
-        super(ID);
+        super.setID(ID);
         this.name = name;
     }
 
@@ -21,14 +21,15 @@ public class Advertiser extends BaseAdvertising{
         this.name = name;
     }
 
-    public String help() {
+    public static String help() {
 
-        return "Advertiser\nID:\tID of Advertiser\nName:\tName of Advertiser\nClicks:\tNumber of clicks of this Advertiser\nViews: Number of views of this Advertiser\n";
+         return "Advertiser\nID:\tID of Advertiser\nName:\tName of Advertiser\nClicks:\tNumber of clicks of this Advertiser\nViews: Number of views of this Advertiser\n";
     }
 
+    @Override
     public String describeMe() {
 
-        return "Advertiser Class Represents The Entity of Advertiser\n";
+         return "Advertiser Class Represents The Entity of Advertiser";
     }
 
     @Override
