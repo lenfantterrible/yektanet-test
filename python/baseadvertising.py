@@ -2,6 +2,9 @@
 
 class BaseAdvertising():
 
+    _clicks = 0 
+    _views = 0 
+    
     def __init__(self, id) -> None:
         self._id = id 
 

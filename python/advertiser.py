@@ -3,10 +3,10 @@ from baseadvertising import BaseAdvertising
 
 class Advertiser(BaseAdvertising):
 
-    totalClicks = 0
+    _totalClicks = 0
 
     def __init__(self, id, name):
-        super(id)
+        super().__init__(id)
         self._name = name 
 
     def getName(self):
